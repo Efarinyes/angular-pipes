@@ -1,0 +1,22 @@
+<p-panel header="Pipes Numèrics" class="p-1">
+
+  <p> Pipes inclosos a Angular al Common Module </p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas netes" subheader="Exercici 2022">
+      {{ (totalSells + 1456 ) | number: '1.2-2'  }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas brutes" subheader="Exercici 2022">
+      {{ totalSells | currency:'EUR': 'symbol-narrow': '1.3-3'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Guanys exercici" subheader="Exercici 2022">
+     {{ percent | percent: '1.2-2' }}
+    </p-card>
+  </div>
+</div>
